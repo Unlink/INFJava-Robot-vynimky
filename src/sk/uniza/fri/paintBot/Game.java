@@ -20,12 +20,12 @@ import java.nio.file.Paths;
 public class Game {
 
     private final Robot robot;
-    private HernaPlocha hernaPlocha;
+    private final HernaPlocha hernaPlocha;
     private Tlacidlo tlacidlo;
     private BlokTextu blokTextu;
     private Program program;
-    private Manazer manazer;
-    private BlokTextu robotInfo;
+    private final Manazer manazer;
+    private final BlokTextu robotInfo;
 
     public Game() {
         var nacitavacMapy = new NacitavacMapy("hernaPlocha.txt");

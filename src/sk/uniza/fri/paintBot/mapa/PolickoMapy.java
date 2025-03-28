@@ -7,7 +7,6 @@ public interface PolickoMapy {
 
     /**
      * Vráti počet značiek na danim poličku
-     * @return
      */
     int getPocetZnaciek();
 

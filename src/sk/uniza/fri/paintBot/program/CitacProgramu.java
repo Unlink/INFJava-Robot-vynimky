@@ -23,7 +23,6 @@ public class CitacProgramu {
 
     /**
      * Načíta program zo súboru
-     * @return
      */
     //TODO, čo ak subor nexistuje, čo ak nema dobre parametre?
     public Program nacitaj() {

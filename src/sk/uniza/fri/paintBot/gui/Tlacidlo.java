@@ -55,8 +55,6 @@ public class Tlacidlo {
 
     /**
      * Posiela manazer
-     * @param x
-     * @param y
      */
     public void vyberSuradnice(int x, int y) {
         if (jeVRozsahu(x, y)) {

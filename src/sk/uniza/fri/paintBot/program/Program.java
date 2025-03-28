@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 public class Program {
-    private ArrayList<Prikaz> prikazy;
+    private final ArrayList<Prikaz> prikazy;
     private int aktualnyPrikaz;
 
     public Program() {
@@ -17,7 +17,6 @@ public class Program {
 
     /**
      * Pridá príkaz do programu
-     * @param prikaz
      */
     public void pridajPrikaz(Prikaz prikaz) {
         this.prikazy.add(prikaz);
@@ -37,7 +36,6 @@ public class Program {
 
     /**
      * Vráti príkaz, ktorý ideme vykonávať
-     * @return
      */
     public Optional<Prikaz> getAktualnyPrikaz() {
         if (this.aktualnyPrikaz >= this.prikazy.size()) {
@@ -48,7 +46,6 @@ public class Program {
 
     /**
      * Vráti textový náhľad programu
-     * @return
      */
     public String getProgram() {
         var sb = new StringBuilder();

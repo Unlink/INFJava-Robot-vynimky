@@ -18,10 +18,7 @@ public class Pozicia {
     }
 
     public boolean jePlatna(HernaPlocha hernaPlocha) {
-        if (x < 0 || y < 0 || x >= hernaPlocha.getRozmer() || y >= hernaPlocha.getRozmer()) {
-            return false;
-        }
-        return true;
+        return x >= 0 && y >= 0 && x < hernaPlocha.getRozmer() && y < hernaPlocha.getRozmer();
     }
 
     public Pozicia posun(Otocenie otocenie) {

@@ -7,8 +7,6 @@ public interface Prikaz {
 
     /**
      * Vykoná príkaz, vrati true, ak je prikaz dokonceny
-     *
-     * @param robot
      */
     void vykonaj(Robot robot);
 }

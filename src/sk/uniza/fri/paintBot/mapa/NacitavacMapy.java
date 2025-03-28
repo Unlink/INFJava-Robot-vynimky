@@ -11,7 +11,7 @@ public class NacitavacMapy {
 
     //TODO, treba nejako validovať či je format mapy OK
     public PolickoMapy[][] nacitajPolicka() {
-        var subor = ClassLoader.getSystemResourceAsStream("hernaPlocha.txt");
+        var subor = ClassLoader.getSystemResourceAsStream(this.nazovMapy);
 
         var scanner = new Scanner(subor);
         var rozmer = scanner.nextInt();
